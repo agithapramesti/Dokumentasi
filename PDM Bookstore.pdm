@@ -1,0 +1,2437 @@
+/BEGIN_TABLE AMCHEAD
+NAME A30
+VERS A8
+USER A30
+/BEGIN_DATA AMCHEAD
+S-Designor/PDM
+5.0.0
+
+/END_TABLE AMCHEAD
+
+/BEGIN_TABLE AMCMODL
+@       N5
+OID     N8
+MODL    N8
+NAME    A80
+CODE    A80
+LABL    A80
+DESC    TXT
+NOTE    TXT
+OPTS    TXT
+DBMS    A80
+FILE    A80
+HEAD    TXT
+FOOT    TXT
+POID    N8
+PNAM    A80
+PCOD    A80
+USER    A80
+VERS    A8
+CDAT    N12
+MDAT    N12
+EDAT    N12
+ACCS    N5
+NUMR    N8
+/BEGIN_DATA AMCMODL
+3
+8
+8
+Model_8
+MODEL_8
+
+
+
+
+SQL Server
+SQLSERV.DEF
+
+
+0
+
+
+
+
+1505967774
+1505969432
+0
+0
+8
+/END_TABLE AMCMODL
+
+/BEGIN_TABLE AMCDOMN
+@       N5
+OID     N8
+DOMN    N8
+NAME    A80
+CODE    A80
+DESC    TXT
+NOTE    TXT
+LABL    A80
+DTTP    A30
+MLEN    N8
+PREC    N2
+IDNT    N1
+MAND    N2
+UNIT    A8
+FRMT    A20
+LVAL    A20
+HVAL    A20
+DVAL    A30
+UPPR    N1
+LOWR    N1
+NMDF    N1
+VALS    TXT
+CRUL    TXT
+SRUL    TXT
+SOID    N8
+/BEGIN_DATA AMCDOMN
+/END_TABLE AMCDOMN
+
+/BEGIN_TABLE AMCTABL
+@       N5
+OID     N8
+TABL    N8
+MODL    N8
+NAME    A80
+CODE    A80
+LABL    A80
+DESC    TXT
+NOTE    TXT
+NBRC    N8
+SOID    N8
+TOBJ    N5
+COBJ    A80
+OPTS    TXT
+PKOP    TXT
+CRUL    TXT
+SRUL    TXT
+PKCN    A30
+CKCN    A30
+NUMR    N8
+/BEGIN_DATA AMCTABL
+3
+2
+2
+8
+Employee
+EMPLOYEE
+
+
+
+0
+0
+0
+
+
+
+
+
+
+
+1
+3
+3
+3
+8
+Transaction
+TRANSACTION
+
+
+
+0
+0
+0
+
+
+
+
+
+
+
+2
+3
+4
+4
+8
+BookImage
+BOOKIMAGE
+
+
+
+0
+0
+0
+
+
+
+
+
+
+
+3
+3
+5
+5
+8
+Category
+CATEGORY
+
+
+
+0
+0
+0
+
+
+
+
+
+
+
+4
+3
+6
+6
+8
+BOOK
+BOOK
+
+
+
+0
+0
+0
+
+
+
+
+
+
+
+5
+/END_TABLE AMCTABL
+
+/BEGIN_TABLE AMCCOLN
+@       N5
+OID     N8
+COLN    N8
+NAME    A80
+CODE    A80
+LABL    A80
+DESC    TXT
+NOTE    TXT
+TABL    N8
+DOMN    N8
+DTTP    A30
+MLEN    N8
+PREC    N2
+IDNT    N1
+UNIT    A8
+FRMT    A20
+LVAL    A20
+HVAL    A20
+DVAL    A30
+UPPR    N1
+LOWR    N1
+NMDF    N1
+VALS    TXT
+CRUL    TXT
+SRUL    TXT
+PRIM    N1
+FORN    N1
+MAND    N1
+DISP    N1
+SOID    N8
+TOBJ    N5
+COBJ    A80
+CKCN    A30
+NUMR    N8
+/BEGIN_DATA AMCCOLN
+3
+7
+7
+empId
+EMPID
+
+
+
+2
+0
+varchar(8)
+8
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+1
+3
+8
+8
+empName
+EMPNAME
+
+
+
+2
+0
+varchar(225)
+225
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+2
+3
+9
+9
+empUname
+EMPUNAME
+
+
+
+2
+0
+varchar(5)
+5
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+3
+3
+10
+10
+password
+PASSWORD
+
+
+
+2
+0
+varchar(45)
+45
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+4
+3
+11
+11
+role
+ROLE
+
+
+
+2
+0
+varchar(7)
+7
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+5
+3
+12
+12
+status
+STATUS
+
+
+
+2
+0
+integer
+0
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+6
+3
+13
+13
+empId
+EMPID
+
+
+
+3
+0
+varchar(8)
+8
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+1
+3
+14
+14
+isbn
+ISBN
+
+
+
+3
+0
+varchar(13)
+13
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+2
+3
+15
+15
+transactionId
+TRANSACTIONID
+
+
+
+3
+0
+varchar(5)
+5
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+3
+3
+17
+17
+dateTrans
+DATETRANS
+
+
+
+3
+0
+datetime
+0
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+4
+3
+30
+30
+isbn
+ISBN
+
+
+
+4
+0
+varchar(13)
+13
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+1
+3
+31
+31
+bookImageId
+BOOKIMAGEID
+
+
+
+4
+0
+varchar(13)
+13
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+2
+3
+32
+32
+imageDesc
+IMAGEDESC
+
+
+
+4
+0
+varchar(225)
+225
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+3
+3
+33
+33
+imageAddress
+IMAGEADDRESS
+
+
+
+4
+0
+varchar(225)
+225
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+4
+3
+27
+27
+categoryId
+CATEGORYID
+
+
+
+5
+0
+varchar(45)
+45
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+1
+3
+28
+28
+categoryName
+CATEGORYNAME
+
+
+
+5
+0
+varchar(20)
+20
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+2
+3
+29
+29
+desc
+DESC
+
+
+
+5
+0
+varchar(225)
+225
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+3
+3
+16
+16
+isbn
+ISBN
+
+
+
+6
+0
+varchar(13)
+13
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+1
+3
+18
+18
+bookTitle
+BOOKTITLE
+
+
+
+6
+0
+varchar(225)
+225
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+2
+3
+19
+19
+author
+AUTHOR
+
+
+
+6
+0
+varchar(225)
+225
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+3
+3
+20
+20
+publisher
+PUBLISHER
+
+
+
+6
+0
+varchar(225)
+225
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+4
+3
+21
+21
+priceBefore
+PRICEBEFORE
+
+
+
+6
+0
+integer
+0
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+5
+3
+22
+22
+priceAfter
+PRICEAFTER
+
+
+
+6
+0
+integer
+0
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+6
+3
+23
+23
+discount
+DISCOUNT
+
+
+
+6
+0
+float
+0
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+7
+3
+24
+24
+stock
+STOCK
+
+
+
+6
+0
+int
+0
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+8
+3
+25
+25
+profit
+PROFIT
+
+
+
+6
+0
+float
+0
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+9
+3
+26
+26
+categoryId
+CATEGORYID
+
+
+
+6
+0
+varchar(45)
+45
+0
+0
+
+
+
+
+
+0
+0
+0
+
+
+
+0
+0
+0
+1
+0
+0
+
+
+10
+/END_TABLE AMCCOLN
+
+/BEGIN_TABLE AMCREFR
+@       N5
+OID     N8
+REFR    N8
+NAME    A80
+CODE    A80
+DESC    TXT
+NOTE    TXT
+TABL1   N8
+TABL2   N8
+URUL    N1
+DRUL    N1
+MAND    N1
+CPRT    N1
+SOID    N8
+TOBJ    N5
+COBJ    A80
+FKCN    A30
+NUMR    N8
+/BEGIN_DATA AMCREFR
+1
+36
+36
+Ref_36
+REF_36
+
+
+2
+3
+1
+1
+0
+1
+0
+0
+
+
+1
+1
+37
+37
+Ref_37
+REF_37
+
+
+6
+3
+1
+1
+0
+1
+0
+0
+
+
+2
+1
+38
+38
+Ref_38
+REF_38
+
+
+6
+4
+1
+1
+0
+1
+0
+0
+
+
+3
+1
+39
+39
+Ref_39
+REF_39
+
+
+5
+6
+1
+1
+0
+1
+0
+0
+
+
+4
+/END_TABLE AMCREFR
+
+/BEGIN_TABLE AMCCCOL
+@       N5
+OID     N8
+CCOL    N8
+COLN1   N8
+COLN2   N8
+/BEGIN_DATA AMCCCOL
+/END_TABLE AMCCCOL
+
+/BEGIN_TABLE AMCCREF
+@       N5
+OID     N8
+CREF    N8
+REFR    N8
+CCOL    N8
+NUMR    N8
+/BEGIN_DATA AMCCREF
+/END_TABLE AMCCREF
+
+/BEGIN_TABLE AMCINDX
+@       N5
+OID     N8
+INDX    N8
+CODE    A80
+TABL    N8
+PRIM    N1
+FORN    N1
+UNIQ    N1
+CLUS    N1
+OPTS    TXT
+COBJ    A80
+NUMR    N8
+/BEGIN_DATA AMCINDX
+/END_TABLE AMCINDX
+
+/BEGIN_TABLE AMCCIDX
+@       N5
+OID     N8
+CIDX    N8
+INDX    N8
+COLN    N8
+ASCD    N1
+NUMR    N8
+/BEGIN_DATA AMCCIDX
+/END_TABLE AMCCIDX
+
+/BEGIN_TABLE AMCAKEY
+@       N5
+OID     N8
+AKEY    N8
+NAME    A80
+CODE    A80
+TABL    N8
+OPTS    TXT
+AKCN    A30
+NUMR    N8
+/BEGIN_DATA AMCAKEY
+/END_TABLE AMCAKEY
+
+/BEGIN_TABLE AMCCKEY
+@       N5
+OID     N8
+CKEY    N8
+AKEY    N8
+COLN    N8
+NUMR    N8
+/BEGIN_DATA AMCCKEY
+/END_TABLE AMCCKEY
+
+/BEGIN_TABLE AMCTRGR
+@       N5
+TEMP    A80
+TEXT    TXT
+NAME    A80
+TABL    N8
+ALWS    N1
+/BEGIN_DATA AMCTRGR
+/END_TABLE AMCTRGR
+
+/BEGIN_TABLE AMCPROC
+@       N5
+OID     N8
+PROC    N8
+NAME    A80
+CODE    A80
+LABL    A80
+DESC    TXT
+NOTE    TXT
+TEXT    TXT
+FUNC    N1
+NUMR    N8
+/BEGIN_DATA AMCPROC
+/END_TABLE AMCPROC
+
+/BEGIN_TABLE AMCVIEW
+@       N5
+OID     N8
+VIEW    N8
+NAME    A80
+CODE    A80
+LABL    A80
+DESC    TXT
+NOTE    TXT
+CUST    N1
+LOBJ    TXT
+QURY    TXT
+UPDT    N1
+GENE    N1
+CHCK    N1
+NUMR    N8
+/BEGIN_DATA AMCVIEW
+/END_TABLE AMCVIEW
+
+/BEGIN_TABLE AMCRULE
+@       N5
+OID     N8
+RULE    N8
+NAME    A80
+CODE    A80
+LABL    A80
+DESC    TXT
+NOTE    TXT
+TYPE    N5
+FLAG    N5
+CEXP    TXT
+SEXP    TXT
+LOBJ    TXT
+SOID    N8
+COBJ    A80
+NUMR    N8
+/BEGIN_DATA AMCRULE
+/END_TABLE AMCRULE
+
+/BEGIN_TABLE AMCTSPC
+@       N5
+OID     N8
+TSPC    N8
+NAME    A80
+CODE    A80
+LABL    A80
+DESC    TXT
+NOTE    TXT
+OPTS    TXT
+NUMR    N8
+/BEGIN_DATA AMCTSPC
+/END_TABLE AMCTSPC
+
+/BEGIN_TABLE AMCSTOR
+@       N5
+OID     N8
+STOR    N8
+NAME    A80
+CODE    A80
+LABL    A80
+DESC    TXT
+NOTE    TXT
+OPTS    TXT
+NUMR    N8
+/BEGIN_DATA AMCSTOR
+/END_TABLE AMCSTOR
+
+/BEGIN_TABLE AMCRPRT
+@       N5
+OID     N8
+RPRT    N8
+FLGS    N8
+NAME    A64
+DESC    A254
+TMLT    BIN
+/BEGIN_DATA AMCRPRT
+/END_TABLE AMCRPRT
+
+/BEGIN_TABLE AMCSLCT
+RPRT    N8
+MODL    N8
+LOBJ    TXT
+/BEGIN_DATA AMCSLCT
+/END_TABLE AMCSLCT
+
+/BEGIN_TABLE AMCCNST
+@       N5
+CNST    N8
+MODL    N8
+NAME    A30
+TYPE    A20
+VALE    A80
+RSRV    N1
+/BEGIN_DATA AMCCNST
+/END_TABLE AMCCNST
+
+/BEGIN_TABLE AMCEXAT
+@       N5
+EXAT    N8
+MODL    N8
+NAME    A30
+TYPE    A20
+LABL    A80
+VALE    A80
+TOBJ    N5
+RSRV    N1
+/BEGIN_DATA AMCEXAT
+/END_TABLE AMCEXAT
+
+/BEGIN_TABLE AMCEXAV
+@       N5
+EXAV    N8
+MODL    N8
+EXAT    N8
+VALE    A80
+OBJT    N8
+/BEGIN_DATA AMCEXAV
+/END_TABLE AMCEXAV
+
+/BEGIN_TABLE PBEDTS
+@       N5
+EDTN    N8
+NAME    A30
+EDIT    A254
+TYPE    N5
+CNTR    N8
+SEQN    N5
+FLAG    N12
+RSVD    A32
+/BEGIN_DATA PBEDTS
+/END_TABLE PBEDTS
+
+/BEGIN_TABLE PBFRMT
+@       N5
+FMTN    N8
+NAME    A80
+FRMT    A254
+TYPE    N5
+CNTR    N8
+GENE    N8
+/BEGIN_DATA PBFRMT
+/END_TABLE PBFRMT
+
+/BEGIN_TABLE PBVALD
+@       N5
+VLDN    N8
+NAME    A80
+VALD    A254
+TYPE    N5
+CNTR    N8
+VMSG    A254
+GENE    N8
+/BEGIN_DATA PBVALD
+/END_TABLE PBVALD
+
+/BEGIN_TABLE AMCFONT
+FONT    N5
+FNAM    A32
+FSIZ    N5
+FSTY    N5
+/BEGIN_DATA AMCFONT
+1
+Arial
+8
+0
+2
+MS Sans Serif
+8
+0
+3
+Arial
+8
+8
+4
+Arial
+6
+0
+/END_TABLE AMCFONT
+
+/BEGIN_TABLE AMCPENS
+PENS    N5
+PSTY    N5
+PCLR    N8
+PWID    N5
+/BEGIN_DATA AMCPENS
+1
+1
+0
+0
+2
+1
+255
+0
+/END_TABLE AMCPENS
+
+/BEGIN_TABLE AMCBRSH
+BRSH    N5
+BSTY    N5
+BCLR    N8
+BHAT    N5
+/BEGIN_DATA AMCBRSH
+1
+0
+16777215
+0
+2
+0
+32896
+0
+3
+0
+255
+0
+4
+0
+65535
+0
+5
+0
+0
+0
+/END_TABLE AMCBRSH
+
+/BEGIN_TABLE AMCPROP
+PROP    N5
+MODL    N8
+SUBM    N8
+SECT    A30
+NPRO    A30
+VPRO    A80
+/BEGIN_DATA AMCPROP
+0
+8
+0
+DataArchitect
+Shadow
+yes
+1
+8
+0
+DataArchitect
+AutoAdjust
+yes
+2
+8
+0
+DataArchitect
+LineStyle
+2
+3
+8
+0
+DataArchitect
+PrnScale
+100
+4
+8
+0
+DataArchitect
+Orientation
+1
+5
+8
+0
+DataArchitect
+DefCheckName
+no
+6
+8
+0
+DataArchitect
+LengthName
+80
+7
+8
+0
+DataArchitect
+UpprCaseName
+no
+8
+8
+0
+DataArchitect
+LowrCaseName
+no
+9
+8
+0
+DataArchitect
+CaseSensName
+no
+10
+8
+0
+DataArchitect
+AllowAllName
+no
+11
+8
+0
+DataArchitect
+AllowChrName
+
+12
+8
+0
+DataArchitect
+InvldChrName
+"+-*/\.,!:;"
+13
+8
+0
+DataArchitect
+NoAccentName
+no
+14
+8
+0
+DataArchitect
+DefCheckCode
+no
+15
+8
+0
+DataArchitect
+LengthCode
+80
+16
+8
+0
+DataArchitect
+UpprCaseCode
+yes
+17
+8
+0
+DataArchitect
+LowrCaseCode
+no
+18
+8
+0
+DataArchitect
+CaseSensCode
+yes
+19
+8
+0
+DataArchitect
+AllowAllCode
+no
+20
+8
+0
+DataArchitect
+AllowChrCode
+'a'-'z', 'A'-'Z', '0'-'9', "_"
+21
+8
+0
+DataArchitect
+InvldChrCode
+
+22
+8
+0
+DataArchitect
+NoAccentCode
+yes
+23
+8
+0
+DataArchitect
+PdmShowName
+no
+24
+8
+0
+DataArchitect
+PdmShowPrim
+yes
+25
+8
+0
+DataArchitect
+PdmShowColn
+yes
+26
+8
+0
+DataArchitect
+PdmShowDttp
+yes
+27
+8
+0
+DataArchitect
+PdmShowKeys
+no
+28
+8
+0
+DataArchitect
+PdmShowNull
+no
+29
+8
+0
+DataArchitect
+PdmShowIndx
+no
+30
+8
+0
+DataArchitect
+PdmShowNameRefr
+no
+31
+8
+0
+DataArchitect
+PdmShowJoinRefr
+yes
+32
+8
+0
+DataArchitect
+PdmShowCnstRefr
+no
+33
+8
+0
+DataArchitect
+PdmShowColnView
+yes
+34
+8
+0
+DataArchitect
+PdmShowDttpView
+yes
+35
+8
+0
+DataArchitect
+PdmShowExprView
+yes
+36
+8
+0
+DataArchitect
+PdmShowTablView
+yes
+37
+8
+0
+DataArchitect
+PdmRltnMode
+yes
+38
+8
+0
+DataArchitect
+PdmAutoMigrFkey
+yes
+/END_TABLE AMCPROP
+
+/BEGIN_TABLE AMCSYMB
+@       N5
+SID     N8
+TSYM    N5
+SSYM    N8
+NUMR    N8
+CSID    N8
+SID1    N8
+SID2    N8
+CLND    N8
+CLNN    N5
+RCX1    N8
+RCY1    N8
+RCX2    N8
+RCY2    N8
+PENS    N5
+BRSH    N5
+CTXT    N8
+FONT    N5
+JUST    N5
+WOVL    N8
+HOVL    N8
+SARR    N5
+CARR    N5
+TARR    N5
+NBPT    N8
+LSPT    BIN
+LSTY    N5
+TEXT    TXT
+PICT    PIC
+BTMP    BMP
+GRPH    N8
+OID     N8
+/BEGIN_DATA AMCSYMB
+3
+64
+289
+34
+1
+0
+0
+0
+0
+0
+-45941
+-5441
+-35067
+1983
+2
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+0
+
+
+
+62
+2
+3
+65
+289
+34
+2
+0
+0
+0
+0
+0
+-19104
+-4553
+-6730
+921
+2
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+0
+
+
+
+62
+3
+3
+66
+289
+34
+3
+0
+0
+0
+0
+0
+16048
+11961
+28797
+17435
+2
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+0
+
+
+
+62
+4
+3
+67
+289
+34
+4
+0
+0
+0
+0
+0
+5286
+-18079
+18410
+-13580
+2
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+0
+
+
+
+62
+5
+3
+68
+289
+34
+5
+0
+0
+0
+0
+0
+180
+-8368
+12104
+2956
+2
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+0
+
+
+
+62
+6
+3
+69
+1
+2
+6
+0
+0
+0
+0
+0
+-45750
+-225
+-36525
+-225
+2
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+0
+
+
+
+62
+0
+3
+88
+1
+2
+7
+0
+0
+0
+0
+0
+-18900
+-3300
+-7875
+-3300
+2
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+0
+
+
+
+62
+0
+3
+90
+1
+2
+8
+0
+0
+0
+0
+0
+16200
+14325
+27675
+14325
+2
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+0
+
+
+
+62
+0
+3
+91
+1
+2
+9
+0
+0
+0
+0
+0
+5625
+-15825
+17475
+-15825
+2
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+0
+
+
+
+62
+0
+3
+92
+1
+2
+10
+0
+0
+0
+0
+0
+375
+750
+10800
+750
+2
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+0
+
+
+
+62
+0
+3
+93
+6
+2
+11
+0
+0
+0
+0
+0
+-31875
+-2025
+-22351
+-2999
+1
+1
+0
+1
+529
+0
+0
+0
+0
+0
+0
+
+0
+empUname=empUname
+
+
+62
+0
+3
+94
+6
+2
+12
+0
+0
+0
+0
+0
+-4724
+-3300
+-676
+-1874
+1
+1
+0
+1
+529
+0
+0
+0
+0
+0
+0
+
+0
+isbn=isbn
+
+
+62
+0
+3
+95
+6
+2
+13
+0
+0
+0
+0
+0
+12075
+-11175
+20624
+-12149
+1
+1
+0
+1
+529
+0
+0
+0
+0
+0
+0
+
+0
+categoryId=categoryId
+
+
+62
+0
+3
+96
+6
+2
+14
+0
+0
+0
+0
+0
+1425
+9375
+11924
+8401
+1
+1
+0
+1
+529
+0
+0
+0
+0
+0
+0
+
+0
+bookImageId=bookImageId
+
+
+62
+0
+3
+74
+290
+2
+15
+0
+64
+65
+0
+0
+0
+0
+0
+0
+2
+3
+0
+0
+0
+0
+0
+1
+0
+0
+2
+7a77ffff7af8ffffc2b8ffff7af8ffff
+2
+
+
+
+62
+36
+3
+76
+290
+2
+16
+0
+68
+65
+0
+0
+0
+0
+0
+0
+2
+3
+0
+0
+0
+0
+0
+1
+0
+0
+2
+2b01000028f7ffff4ce5ffff28f7ffff
+2
+
+
+
+62
+37
+3
+78
+290
+2
+17
+0
+68
+66
+0
+0
+0
+0
+0
+0
+2
+3
+0
+0
+0
+0
+0
+1
+0
+0
+3
+621500001409000062150000c8360000473f0000c8360000
+2
+
+
+
+62
+38
+3
+80
+290
+2
+18
+0
+67
+68
+0
+0
+0
+0
+0
+0
+2
+3
+0
+0
+0
+0
+0
+1
+0
+0
+4
+8f1600002ec2ffff8f1600008dd4ffff942e00008dd4ffff942e000037e6ffff
+2
+
+
+
+62
+39
+/END_TABLE AMCSYMB
+
+
