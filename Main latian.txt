@@ -1,0 +1,37 @@
+package com.example.BlibliFuturePro;
+
+import com.example.BlibliFuturePro.dao.UserDao;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.util.Scanner;
+
+@SpringBootApplication
+public class BlibliFutureProApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(BlibliFutureProApplication.class, args);
+
+		Scanner s= new Scanner(System.in);
+		UserDao U= new UserDao();
+		int menu=-1;
+		do {
+			System.out.println("[1] Make Connection");
+			System.out.println("[2] Close Connection");
+			System.out.println("[3] View All");
+			System.out.println("Masukkan Pilihan : ");menu = s.nextInt();
+			switch (menu){
+				case 1:
+					U.makeConnection();
+					break;
+				case 2:
+					U.closeConnection();
+					break;
+				case 3:
+					System.out.println(U.getAllUser());
+					break;
+			}
+		}while (menu!=0);
+
+	}
+}

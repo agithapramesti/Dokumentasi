@@ -1,0 +1,50 @@
+create table EMPLOYEE 
+(
+EMPLOYEE_ID integer not null,
+EMPLOYEE_NAME character varying(25),
+EMPLOYEE_UNAME character varying(10),PASSWORD character varying(8),
+ ROLE character varying(10),
+STATUS integer,
+   constraint PK_EMPLOYEE primary key (EMPLOYEE_ID)
+);
+
+create table store(store_id integer not null,employee_id integer not null, store_name character varying(20), address character varying (35), npwp character varying(25), post_code character varying(10), email character varying(20), image character varying(50),constraint PK_Store primary key(store_id), constraint fk_empId foreign key(employee_id) references employee(employee_id) );
+
+create table TRANSACTION 
+(
+TRANSACTION_ID integer not null,
+ EMPLOYEE_ID integer not null,
+ DATE date,
+ constraint PK_TRANSACTION primary key (TRANSACTION_ID), 
+constraint fk_empId foreign key(employee_id) references employee(employee_id));
+
+create table BOOK 
+(BOOK_ID integer not null,
+ CATEGORY_ID  integer not null,
+ISBN character varying(20),BOOK_TITLE character varying(35),
+AUTHOR  character varying(25),PUBLISHER character varying(25),PRICE_BEFORE float,
+PRICE_AFTER float,
+DISCOUNT float ,
+LOCATION character varying(20),
+PROFIT float,
+constraint PK_BOOK primary key (BOOK_ID),constraint fk_catId foreign key(category_id) references category(category_id)
+);
+
+create table DETIL_TRANSACTION 
+(DETIL_ID integer not null,
+ TRANSACTION_ID integer not null,BOOK_ID integer not null,
+QUANTITY float,
+UNIT_PRICE float,
+DISCOUNT float,
+ constraint PK_DETIL_TRANSACTION primary key (DETIL_ID)
+, constraint fk_transId foreign key(transaction_id) references transaction(transaction_id)
+,constraint fk_bookId foreign key(book_id) references book(book_id)
+);
+
+create table BOOK_IMAGE 
+(BOOKIMAGE_ID integer not null
+,BOOK_ID integer not null,
+ 
+IMAGE_DESC character varying(50),IMAGE_ADD character varying(50),constraint PK_bookImage primary key (BOOKIMAGE_ID)
+,constraint fk_bookId foreign key(book_id) references book(book_id)
+);
